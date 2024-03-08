@@ -1,0 +1,78 @@
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+}
+.info-container-mobile {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .info-container-mobile {
+    display: none;
+  }
+}
+.img-title-mobile {
+  display: flex;
+}
+.title-url-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  padding-left: 20px;
+  padding-right: 40px;
+  color: #475569;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.title {
+  font-weight: 600;
+  font-family: 'Roboto';
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.url {
+  color: #64748b;
+  font-family: 'Roboto';
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.delete-icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .info-container {
+    display: none;
+    margin-right: auto;
+  }
+  .time {
+    padding: 0px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .title {
+    padding: 0px;
+    margin: 0px;
+  }
+  .delete-btn {
+    margin-right: 10px;
+    margin-left: 16px;
+  }
+}
